@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запис</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/zap.css">
+
+
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <img class="navbar-brand" src="img/1.2.png" alt="logo">
+          </div>
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="holovna.html#headerwrap">Головна</a></li>
+                <li><a href="holovna.html#aboutus">Про нас</a></li>
+                <li><a href="licari.html">Лікарі</a></li>
+                <li><a href="zapus.html">Запис</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div id="zapus">
+      <div class="container">
+      <div class="row center">
+        <div class="col-lg-4">
+          <form class="form" role="form">
+            <h3 >Запис на прийом</h3>
+            <div class="form-group">
+              <input type="text" class="form-control" id="name" placeholder="Ім'я">
+              <input type="text" class="form-control" id="lastname" placeholder="Фамілія">
+              <input type="email" class="form-control" id="email" placeholder="Електронна пошта">
+              <input type="tel" class="form-control" id="number" placeholder="Номер телефону">
+              <input type="datetime-local"class="form-control" id="time">
+
+              <a  class="btn buttonz" data-toggle="modal" data-target="#modal" >Підтвердити</a>
+
+            </div>
+          </form>
+        </div>
+
+      </div>
+      </div>
+      </div>
+
+
+
+      <div class="container-fluid line"></div>
+
+      <div class="modal fade" id="modal"  tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button class="close" type="button" data-dismiss="modal">x</button>
+              <h4 class="modal-title" id="modalLable">Підтвердіть запис</h4>
+            </div>
+            <div class="modal-body">Протягом 10 хвилин Вам зателефонують для підтвердження запису</div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="css/bootstrap.min.js"></script>
+  </body>
+</html>
